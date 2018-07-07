@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style> 
+        #nicci {
+            color: coral;
+            font-size: 24px;
+        }
+
+        .chew {
+            color:darkred;
+        }
+        .anotherone{
+            font-size: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <span>Home</span> for <a href= "nicci.html" id="mango"> Nicci</a>
+
+        <button onclick="changeFontSize()">Big Font</button>
+        <button onclick="emptyClassList()">No change</button>
+
+        <script>
+            function changeFontSize() {
+                m = document.querySelector("#mango");
+                m.classList = "anotherone";
+            }
+            function emptyClassList() {
+                m = document.querySelector("#mango");
+                m.classList = "";
+            }
+        </script>
+    </body>
+</html>
